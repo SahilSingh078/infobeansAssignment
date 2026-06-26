@@ -15,6 +15,6 @@ else:
 if a < 20000 and b >= 4:
     hike += 2000
 
-final_salary = a + hike   # ✅ always runs
+final_salary = a + hike 
 
 print("Revised Salary: ₹", int(final_salary))

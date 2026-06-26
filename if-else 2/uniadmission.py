@@ -17,7 +17,7 @@ if marks >= 70:
 else:
     if category != "general" and marks >= 60:
         if entrance >= 70:
-            status = "Waitlisted"
+            status = "Waitlisted"		
         else:
             status = "Rejected"
     else:
