@@ -1,4 +1,4 @@
-'''
+ '''
 Unique Digit Security Scanner
 A smart locker accepts only numbers whose all digits are unique.
 Write a program using for-else loop to:

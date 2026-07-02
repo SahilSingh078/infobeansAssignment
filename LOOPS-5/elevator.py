@@ -48,32 +48,22 @@ Emergency Alarm
 '''
 
 ''
-n=input("Enter number = ")
-l=len(n)
-m=int(n)
-sum=0
-count=0
-smallest=9
-for i in n:
-	if i=="0":
-		count=count+1
-print("Zero Count = ",count)
-while m>0:
-	r=m%10
-	sum=sum+r
-	if smallest>r:
-		smallest=r
-	m=m//10
-print(f"Sum = {sum}")
-print("Smallest Digit= {}".format(smallest))
-new=sum*smallest
-print("Final Result = ",new)
-i=2
-while i<=new:
-	if new%i==0:
-		count=count+1
-	i=i+1
-if count==0:
-	print("Prime Number")
+mode = int(input("enter number = "))
+
+if mode == 1:
+    current = int(input("enter curr = "))
+    dest = int(input("enter des = "))
+    for i in range(current,dest+1):
+        print(i,end=" ")
+elif mode == 2:
+    current = int(input("enter curr = "))
+    dest = int(input("enter des = "))
+    for i in range(current,dest-1,-1):
+        print(i,end=" ")
+elif mode == 3:
+    dest = int(input("enter des = "))
+    for i in range(0,dest+1,2):
+        print(i,end=" ")
 else:
-	print("Not Prime Number")
+    for i in range(4):
+        print("Emergency Alarm")
